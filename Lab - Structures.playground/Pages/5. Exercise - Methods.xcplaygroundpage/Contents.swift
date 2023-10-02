@@ -18,6 +18,9 @@ struct Post {
     var likes: Int
     var numberOfComments: Int
 
+    mutating func like(){
+        likes += 1
+    }
 }
 
 
