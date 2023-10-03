@@ -26,8 +26,14 @@ print(favoriteBook.title, favoriteBook.author, favoriteBook.pages, favoriteBook.
  Make a `Laptop` struct with three variable properties, `screenSize` of type `Int`, `repairCount` of type `Int`, and `yearPurchased` of type `Int`. Give `screenSize` a default value of `13` and `repairCount` a default value of `0`, and leave `yearPurchased` without a default value. Declare two instances of `Laptop`, using the two provided memberwise initializers.
  */
 struct laptop{
+    var screenSize: Int = 13
+    var repairCount: Int = 0
+    var yearPurchased: Int
     
 }
+
+var myLaptop = laptop(yearPurchased: 2006)
+print(myLaptop.screenSize,myLaptop.repairCount,myLaptop.yearPurchased)
 
 /*:
  Make a `Height` struct with two variable properties, `heightInInches` and `heightInCentimeters`. Both should be of type `Double`.
